@@ -8,7 +8,7 @@ function start() {
 		response.end();
 	}
 
-	http.createServer(onRequest).listen(process.env.OPENSHIFT_NODEJS_PORT || 3000);
+	http.createServer(onRequest).listen(process.env.OPENSHIFT_NODEJS_PORT || 8080  );
 	console.log("Server has started.");
 }
 
